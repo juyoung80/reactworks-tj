@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수 예제</title>
+</head>
+<body>
+    <h2>반환값이 없는 함수</h2>
+    <div id="result"></div>
+
+    <script>
+        //함수를 정의
+        const result = document.getElementById('result');
+        function sayHello() {
+            result.innerText = 'Hello!';
+        }
+
+        function sayHello2(name) {
+            result.innerText = `Hello, ${name}!`;
+        }
+        //함수를 호출
+        sayHello();
+        sayHello2('ju');
+    </script>
+</body>
+</html>

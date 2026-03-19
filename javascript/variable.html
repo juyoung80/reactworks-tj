@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수와 자료형</title>
+</head>
+<body>
+    <!-- 변수 - 데이터를 저장하기 위한 이름을 붙은 저장 공간 -->
+     <script>
+        // 1. 숫자형
+        let age = 25; // 숫자형 변수 선언 및 초기화
+        let temperature = 24.5; // 실수형 변수 선언 및 초기화
+
+        console.log("나이:", age); // 나이: 25
+        console.log("온도:", temperature); // 체온: 24.5
+        console.log(typeof(age)); 
+        console.log(typeof(temperature)); 
+
+
+        // 2. 문자열형
+        let player = "이상우"; // 문자열형 변수 선언 및 초기화
+        let city = '서울'; // 문자열형 변수 선언 및 초기화
+
+        console.log("플레이어:", player); // 플레이어: 이상우
+        console.log("도시:", city); // 도시: 서울
+        console.log(typeof(player)); 
+        console.log(typeof(city)); 
+
+        // 3. 논리형 - true 또는 false 값을 가지는 자료형
+        let isRaining = false; // 논리형 변수 선언 및 초기화
+        let isSunny = true; // 논리형 변수 선언 및 초기화
+
+        console.log("비가 오는가?", isRaining); // 비가 오는가? false
+        console.log("맑은가?", isSunny); // 맑은가? true
+        console.log(typeof(isRaining)); 
+        console.log(typeof(isSunny)); 
+
+        // 4. undefined - 값이 할당되지 않은 상태
+        let score;
+        console.log("점수:", score); // 점수: undefined
+        console.log(typeof(score)); 
+
+        // 5. 배열 - 객체형
+        let fruits = ["사과", "바나나", "오렌지"]; // 배열 변수 선언 및 초기화
+        console.log("과일 목록:", fruits); // 과일 목록: ["사과", "바나나", "오렌지"]
+        console.log(typeof(fruits));    
+
+        // 6. 객체 - object
+        let student = {
+            name: "우영우",
+            age: 10,
+            city: "서울"
+        }; // 객체 변수 선언 및 초기화  
+        console.log(student);
+        console.log(typeof(student));    
+        console.log(student.city);    
+
+     </script>
+</body>
+</html>

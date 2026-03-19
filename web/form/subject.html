@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수강신청 폼 만들기</title>
+    <link rel="stylesheet" href="../css/main.css">       
+</head>
+<body>
+    <div class="wrap">
+        <form action="#" method="post">
+            <fieldset>
+                <legend>수강신청 폼</legend>
+                <ul>
+                    <li>
+                        <label for="cid">학과번호</label>
+                        <input type="text" id="cid" name="cid" autofocus required>
+                        
+                    </li>
+                    <li>
+                        <label for="sname">이름</label>
+                        <input type="text" id="sname" name="sname" value="우영우" readonly>
+                    </li>
+                    <li>
+                        <label for="major">학과
+                            <select id="major" name="major">
+                                <option value="">학과 선택</option>
+                                <option value="cs">컴퓨터공학과</option>
+                                <option value="ee">전자공학과</option>
+                                <option value="me">기계공학과</option>
+                            </select>
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+        <button type="submit">신청</button>
+    </div>
+</body>
+</html>

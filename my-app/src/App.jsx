@@ -1,0 +1,39 @@
+import './App.css'
+import picture from './assets/hero.png'
+import Example01 from './comporents/Example01';
+import Example02 from './comporents/Example02';
+
+//버튼 컴포넌트 정의
+function MyButton() {
+  return (
+    <button>목록보기</button>
+  );
+}
+
+function App() {
+  const season = "봄"
+
+  return (
+    <>
+      <div>
+        <h2 className="headline">리액트 시작하기</h2>
+        {/* <h3 style={{ color: 'red', fontWeight: 'bold' }}>jsx 문법</h3>
+        <h3>현재 계절은 {season}입니다.</h3>           */}
+        {/* <img src={picture} alt="hero" width={200} /> */}
+      </div>
+      <Example01 />
+      <Example02 />
+
+
+
+
+
+      {/* <div>
+        <p>good luck!<br/>행운을 빌어요!</p>
+         <MyButton />
+      </div> */}
+    </>
+  )
+}
+
+export default App

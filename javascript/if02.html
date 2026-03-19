@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if문</title>
+</head>
+<body>
+    <h2>짝수/홀수 판별</h2>
+    <div id="result"></div>
+    <button onclick="calculate()">판별하기</button>
+
+    <script>
+        
+
+        function calculate(){
+
+            const demo = document.getElementById("result");
+            let num = prompt("숫자를 입력하세요."); // 판별할 숫자
+
+            if (num % 2 === 0) {
+                //console.log(num + "는 짝수입니다.");
+                //demo.textContent = `${num}은 짝수입니다.`;
+                demo.innerHTML = `<b>${num}</b>은 짝수입니다.`;
+                demo.style.color = "blue"; // 짝수는 파란색으로 표시
+            } else {
+                //console.log(num + "는 홀수입니다.");
+                //demo.textContent = `${num}은 홀수입니다.`;
+                demo.innerHTML = `<b>${num}</b>은 홀수입니다.`;
+                demo.style.color = "red"; // 홀수는 빨간색으로 표시
+            }
+        };
+    </script>
+</body>
+</html>
