@@ -22,19 +22,27 @@
                         <input type="text" id="sname" name="sname" value="우영우" readonly>
                     </li>
                     <li>
-                        <label for="major">학과
-                            <select id="major" name="major">
+                        <label for="major">학과</label>
+                            <select id="major" name="major" onchange="selectMajor()">
                                 <option value="">학과 선택</option>
-                                <option value="cs">컴퓨터공학과</option>
-                                <option value="ee">전자공학과</option>
-                                <option value="me">기계공학과</option>
-                            </select>
-                        </label>
+                                <option value="컴퓨터공학과">컴퓨터공학과</option>
+                                <option value="전자공학과">전자공학과</option>
+                                <option value="기계공학과">기계공학과</option>
+                            </select>                        
                     </li>
                 </ul>
             </fieldset>
         </form>
         <button type="submit">신청</button>
+        <button type="reset">취소</button>
     </div>
 </body>
+
+<script>
+    function selectMajor() {
+        //선택 목록 요소의 접근
+        const majorSelect = document.getElementById('major').value;
+       alert(`${majorSelect}가 선택되었습니다.`);
+    }   
+</script>
 </html>
