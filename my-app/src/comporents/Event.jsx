@@ -4,20 +4,34 @@ const Event = () => {
         alert('버튼이 클릭되었습니다!');
     }
 
+    //절대값을 계산하는 함수 정의
+    const handleMyAbs= (x) => {
+        if(x >= 0) {
+           console.log(-x);
+        } else {
+            console.log(x);
+        }
+    }
+
     //폼 요소(입력상자)와 이벤트 핸들링
-    const handleChange = (event) => {
+    const handleChange = (e) => {
+        //event 축소형 -> e
         //console.log(event);
-        console.log(event.target.value);//입력값 출력
+        console.log(e.target.value);//입력값 출력
     };
 
     return (
         <div>   
             <h2>이벤트 핸들링</h2>
             {/* 인라인 핸들러:이벤트 속성안에 함수를 직접 생성 */}
-            {/* <button onClick={() => alert('버튼이 클릭되었습니다!')}>클릭하세요</button> */}
+            <button onClick={() => alert('버튼이 클릭되었습니다!')}>클릭하세요</button>
 
-            <button onClick={handleClick}>클릭하세요</button><br/>
+            {/* <button onClick={handleClick}>클릭하세요</button> */}
+            <br/>
 
+            <button onClick={() => handleMyAbs(-5)}>결과</button>
+            <br/>
+            
             {/* 입력이벤트 */}
             <input type="text" onChange={handleChange} />
 
