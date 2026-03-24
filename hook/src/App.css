@@ -1,4 +1,29 @@
-.product-list ul {
+ul {
   list-style-type: none;
   padding: 0;
+}
+.drikName, .userName{
+  margin: 50px auto;
+  font-weight:500;
+  border: 1px solid #fff;
+  padding: 20px;
+  width:500px;
+}
+
+.tit{
+  margin: 50px auto;
+  font-weight:500;
+  border: 1px solid #fff;
+  padding: 20px 0;
+  width:300px;
+}
+
+.avatar{
+  border-radius: 3%;
+
+}
+.card img{
+  border: 2px solid #06cccc;
+  border-radius: 12px;
+  padding:7px;
 }

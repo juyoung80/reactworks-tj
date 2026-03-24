@@ -6,6 +6,10 @@ import './App.css'
 import Header from './componerts/Header';
 import Main from './componerts/Main'
 import Footer from './componerts/Footer'
+import Example1 from './componerts/Example1'
+import Example2 from './componerts/Example2'
+import Example3 from './componerts/Example3'
+
 
 function App() {
    
@@ -21,14 +25,17 @@ function App() {
 
   return (
     <>
-      <Header />
+       {/* <Example1 />
+       <Example2 /> */}
+      <Example3 />
+
+       {/* <Header />
       
       <div>{name}님, <span>{message}</span></div>
 
       <Main />
       
-      <Footer />     
-      
+      <Footer />     */}
     </>
   )
 }
