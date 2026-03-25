@@ -1,0 +1,25 @@
+body{
+  margin: 0;
+}
+
+.header{
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+.header a{
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+}
+ 
+.main{
+  padding: 20px 50px;
+}
+
+h1{
+  margin:10px 0;
+}
+.product-list, .product-info{
+  padding: 20px 50px;
+}

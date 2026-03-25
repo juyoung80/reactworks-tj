@@ -27,3 +27,23 @@ ul {
   border-radius: 12px;
   padding:7px;
 }
+.btn{ margin-top: 20px;}
+
+.sign_tit{
+  margin-top:30px;
+  font-weight:bold;
+}
+
+#root{
+  text-align: left;
+  padding-left:50px;
+}
+
+.success{
+  color:green;
+  font-weight:bold;
+}
+.fail{
+  color:red;
+  font-weight:bold;
+}

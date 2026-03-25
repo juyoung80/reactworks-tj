@@ -10,12 +10,18 @@ import AddDrink from './components/AddDrink'
 import User from './components/User'
 import Clock from './components/Clock'
 import Profile from './card/Profile'
+import MapTest from './components/MapTest'
+import SignUp from './form/SignUp'
+import Signin from './form/Signin'
 
 function App() {
 
   return (
     <>
-    <Profile/>
+    <Signin />
+    {/* <SignUp /> */}
+    {/* <MapTest /> */}
+    {/* <Profile/> */}
     {/* <Clock/> */}
     {/* <User/> */}
       {/* <AddDrink /> */}
