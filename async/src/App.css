@@ -66,3 +66,29 @@ button.btn_del{
   border: 1px solid #bdbdbd;
   border-radius: 7px;
 }
+
+.tb_fetch{  
+  width:600px;
+  margin:0 auto;
+  border-spacing: 0px;
+  border:1px solid #999;
+}
+.tb_fetch th{
+  background-color: #ddd;
+  border-right:1px solid #999;
+  padding:7px;
+  margin:0;
+}
+.tb_fetch th:last-child{
+  border-right:0;
+}
+.tb_fetch td{
+  border-right:1px solid #999;
+  border-top:1px solid #999;
+  padding:7px;
+  background-color: #fff;
+  margin:0;
+}
+.tb_fetch td:last-child{
+  border-right:0;
+}
